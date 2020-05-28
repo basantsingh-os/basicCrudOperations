@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using API.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace API.Controllers
 {
@@ -16,16 +18,16 @@ namespace API.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Company>> GetCompanies()
+        public async Task<ActionResult<List<Company>>> GetCompanies()
         {
-            var companys = _context.Companys.ToList();
+            var companys = await _context.Companys.ToListAsync();
             return Ok(companys);
         }
 
         [HttpGet("{id}")]
-        public string GetCompany(int id)
+        public async Task<ActionResult<List<Company>>> GetGetCompany(int id)
         {
-            return "single company";
+            return Ok(await _context.Companys.FindAsync(id));
         }
 
 
