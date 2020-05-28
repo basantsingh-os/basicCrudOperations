@@ -8,7 +8,6 @@ namespace API.Data
        {
            
        }
-
-       public DbSet<Company> Companies { get; set; }
+       public DbSet<Company> Companys { get; set; }
     }
 }
