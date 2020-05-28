@@ -1,3 +1,6 @@
+using System.Collections.Generic;
+using System.Linq;
+using API.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
@@ -6,10 +9,17 @@ namespace API.Controllers
     [Route("api/[controller]")]
     public class CompanysController : ControllerBase
     {
-        [HttpGet]
-        public string GetCompanies()
+        private readonly StoreContext _context;
+        public CompanysController(StoreContext context)
         {
-            return "list of all companies";
+            _context = context;
+        }
+
+        [HttpGet]
+        public ActionResult<List<Company>> GetCompanies()
+        {
+            var companys = _context.Companys.ToList();
+            return Ok(companys);
         }
 
         [HttpGet("{id}")]
@@ -18,7 +28,7 @@ namespace API.Controllers
             return "single company";
         }
 
-        
-        
+
+
     }
 }

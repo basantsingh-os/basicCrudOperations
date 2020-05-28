@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/basantsingh/Desktop/erp/api/API.csproj": {}
+    "/Users/basantsingh/Desktop/erp/API/API.csproj": {}
   },
   "projects": {
-    "/Users/basantsingh/Desktop/erp/api/API.csproj": {
+    "/Users/basantsingh/Desktop/erp/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/basantsingh/Desktop/erp/api/API.csproj",
+        "projectUniqueName": "/Users/basantsingh/Desktop/erp/API/API.csproj",
         "projectName": "API",
-        "projectPath": "/Users/basantsingh/Desktop/erp/api/API.csproj",
+        "projectPath": "/Users/basantsingh/Desktop/erp/API/API.csproj",
         "packagesPath": "/Users/basantsingh/.nuget/packages/",
-        "outputPath": "/Users/basantsingh/Desktop/erp/api/obj/",
+        "outputPath": "/Users/basantsingh/Desktop/erp/API/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
