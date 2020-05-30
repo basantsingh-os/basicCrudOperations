@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "WudKeLh3MyjNtCLy7Sa9NuX1fi/cc6ReTn/R640cStX+7lnBfaiU8W/45dz5h6/x7g1mpeKtFaXxsNuC1i150A==",
+  "success": true,
+  "projectFilePath": "/Users/basantsingh/Desktop/erp/Core/Core.csproj",
+  "expectedPackageFiles": [
+    "/Users/basantsingh/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/basantsingh/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
