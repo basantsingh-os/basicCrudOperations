@@ -36,5 +36,18 @@ namespace API.Controllers
             return Ok(await _repo.GetCompanyByIdAsync(id));
         }
 
+
+        [HttpGet("Owners")]
+        public async Task<ActionResult<IReadOnlyList<Owner>>> GetOwners()
+        {
+            return Ok(await _repo.GetOwnersAsync());
+        }
+
+          [HttpGet("employees")]
+        public async Task<ActionResult<IReadOnlyList<Employee>>> GetEmployees()
+        {
+            return Ok(await _repo.GetEmployeesAsync());
+        }
+
     }
 }
